@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You're Loved</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff4da6;
+    }
+    p {
+      font-size: 1.5em;
+      color: #ff3399;
+    }
+    .btn {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      background-color: #ff66b3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin: 20px;
+      cursor: pointer;
+    }
+    .gif {
+      width: 250px;
+      margin: 20px auto;
+      display: block;
+    }
+    .popup {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #ff66cc;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>You're So Loved!</h1>
+  <img class="gif" src="https://media.giphy.com/media/f9k1tV7HyORcngKF8v/giphy.gif" alt="hugging cartoon" />
+  <img class="gif" src="https://media.giphy.com/media/Qbdz7ec7J2HWo/giphy.gif" alt="kissing cartoon" />
+  <p>Click below to feel the love even more!</p>
+  <button class="btn" onclick="showLove()">Hug Me</button>
+  <button class="btn" onclick="showLove()">Kiss Me</button>
+  <div class="popup" id="popup">You're truly loved!</div>
+  
+  
+
+  
+<div style="margin-top: 30px;">
+  <p style="color: #d63384; font-size: 1.2em;">Play 'Dandelions - Ruth B'</p>
+  <audio id="bgm" controls>
+    <source src="dandelions.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script>
+    function showLove() {
+      document.getElementById('popup').style.display = 'block';
+    }
+    function toggleMusic() {
+      var music = document.getElementById('bgm');
+      music.play();
+    }
+  </script>
+</body>
+</html>
